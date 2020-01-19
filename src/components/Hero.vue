@@ -9,13 +9,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="/img/products/sl-1.jpg" style="height: 650px" alt="First slide">
+                    <img class="d-block w-100" src="/img/products/banner1.jpg" style="height: 600px" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/img/products/slider_english-en.jpg" style="height: 650px" alt="Second slide">
+                    <img class="d-block w-100" src="/img/products/slider_english-en.jpg" style="height: 600px" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/img/products/banner1.jpg" style="height: 650px" alt="Third slide">
+                    <img class="d-block w-100" src="/img/products/sl-1.jpg" style="height: 600px" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -28,18 +28,17 @@
             </a>
         </div>
     </div>
+    <products-list></products-list>
 
     <div class="hero">
         <div class="container h-100">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-md-5">
                     <div class="hero-content">
-                        <h1 class="hero-title">
-                            Vue Shop For Developers
-                        </h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos numquam tempora, iure delectus totam minus quam aperiam ratione dolores magni voluptates ut necessitatibus odio ipsum fuga, voluptas ab praesentium nihil?
-                        </p>
+                        <h4 class="hero-title">
+                            Online Shoping From Here. Stay with Us & Get Product Without Service Charge.
+                        </h4>
+                        <p>We have technology, finally, that for the first time in human history allows people to really maintain rich connections with much larger numbers of people. People shop and learn in a whole new way compared to just a few years ago, so marketers need to adapt or risk extinction.</p>
                         <div class="hero-btn mt-5">
                             <button class="btn custom-btn btn-info mr-4">Explore</button>
                             <button class="btn custom-btn btn-outline-secondary">Products</button>
@@ -54,7 +53,6 @@
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -64,7 +62,6 @@
                         <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -129,7 +126,6 @@
         </div>
     </div>
 </div>
-
 </template>
 
 <script>
@@ -156,7 +152,6 @@
             -webkit-transform: scale(1.5, 1.5);
         }
     }
-
     @keyframes zoom {
         from {
             transform: scale(1, 1);
@@ -165,10 +160,8 @@
             transform: scale(1.5, 1.5);
         }
     }
-
     .carousel-inner .carousel-item> img {
         -webkit-animation: zoom 20s;
         animation: zoom 20s;
     }
-
 </style>

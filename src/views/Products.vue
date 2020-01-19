@@ -7,17 +7,14 @@
                         <h3>Our Products</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur ducimus harum inventore praesentium quaerat quisquam repellendus voluptatibus. Doloremque error excepturi itaque, necessitatibus nihil placeat possimus rem sed vitae voluptates.</p>
                     </div>
-
                     <div class="col-md-6">
                         <img src="/img/svg/products.svg" alt="" class="img-fluid" style="height: 400px" width="400px">
                     </div>
                 </div>
             </div>
-
             <div class="product-test pt-5">
                 <h3 class="d-inline-block">Products list</h3>
                 <button class="btn btn-primary float-right mb-3" @click="add"><i class="fas fa-user-plus"></i> Create</button>
-
                 <div class="table-responsive table-hover table-striped">
                     <table class="table table-bordered table-striped">
                         <thead>
@@ -30,7 +27,6 @@
                         </thead>
                         <tbody>
                         <tr v-for="(product,idx) in products" :key="idx">
-
                             <td>{{product.name}}</td>
                             <td>{{product.price}}</td>
                             <td>{{product.tag}}</td>
@@ -57,10 +53,8 @@
                         </button>
                     </div>
                     <div class="modal-body">
-
                         <div class="row">
                             <!-- main product -->
-
                             <div class="col-md-8">
                                 <div class="form-group">
                                     <input type="text" placeholder="Product Name" v-model="product.name" class="form-control">
@@ -78,27 +72,20 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="text" placeholder="Product tags" v-model="product.tag" class="form-control">
-
                                     <div class="d-flex"></div>
                                 </div>
-
                                 <div class="form-group">
                                     <label class="float-left" for="product">Choose Images</label>
                                     <input type="file" @change="uplodeImage" class="form-control">
                                 </div>
-
                                 <div class="form-group d-flex">
                                     <div class="p-1" v-for="(image,index) in product.images" :key="image">
-
                                             <div class="show-image">
                                                 <img :src="image" alt="" width="80px">
                                                 <i class="fas fa-trash" style="color: red;width: 10px;font-size: 18px" @click="deleteImage(image,index)"></i>
-
                                             </div>
                                         </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>

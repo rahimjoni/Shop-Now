@@ -27,6 +27,7 @@ Vue.component('Product', require('./sections/Products').default);
 Vue.component('Login', require('./components/Login').default);
 Vue.component('products-list', require('./sections/ProductList.vue').default);
 Vue.component('add-to-cart', require('./components/AddToCart.vue').default);
+Vue.component('footer-content', require('./components/Footer').default);
 
 
 Vue.config.productionTip = false;
@@ -41,8 +42,6 @@ fb.auth().onAuthStateChanged(function() {
       store,
       render: h => h(App)
     }).$mount("#app");
-
   }
-
 });
 

@@ -5,7 +5,6 @@
     <div class="container"><br>
       <div class="row">
         <div class="col-md-8"><u>Product Details</u><br><br><br>
-
           <table class="table table-bordered table-hover">
             <thead>
             <tr>
@@ -29,7 +28,6 @@
               </td>
             </tr>
             </tbody>
-
           </table>
           <router-link to="/"><button class='btn btn-primary'>Continue shoping</button></router-link>
           <router-link to="/order"><button class='btn btn-info ml-2'>Check tracking Status</button></router-link>

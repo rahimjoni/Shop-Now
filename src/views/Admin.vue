@@ -9,16 +9,15 @@
                     <!-- sidebar-brand  -->
                     <div class="sidebar-item sidebar-brand">
                         <a href="#">Vue Shopping</a>
-
                     </div>
                     <!-- sidebar-header  -->
                     <div class="sidebar-item sidebar-header">
                         <div class="user-pic">
-                            <img class="img-responsive img-rounded" src="/img/user1-128x128.jpg" alt="User picture">
+                            <img class="img-responsive img-rounded" src="/img/user1-128x128.png" alt="User picture">
                         </div>
                         <div class="user-info">
                         <span class="user-name">
-                            <strong>Smith</strong>
+                            <strong>{{name}}</strong>
                         </span>
                             <span class="user-role">{{email}}</span>
                             <span class="user-status">
@@ -45,7 +44,6 @@
                             <li class="header-menu">
                                 <span>Menu</span>
                             </li>
-
                             <li>
                                 <router-link to="/admin/overview">
                                     <i class="fa fa-chart-line"></i>
@@ -67,7 +65,6 @@
                                     <span class="badge badge-pill badge-success">New</span>
                                 </router-link>
                             </li>
-
                             <li>
                                 <router-link to="/admin/profile">
                                     <i class="fa fa-user"></i>
@@ -87,35 +84,44 @@
                     <!-- sidebar-menu  -->
                 </div>
             </nav>
-            <div class="container">
+            <div class="container" style="margin-top: 50px">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-3">
+                        <router-link to="/admin/overview">
                         <div class="card border-success mb-3" style="max-width: 22rem;">
-                        <div class="card-header bg-success text-white">Work Process</div>
-                        <div class="card-body text-success" style="font-size: 80px">
+                        <div class="card-header bg-success text-white">Overview Item</div>
+                        <div class="card-body text-success" style="font-size: 40px">
                             <i class="fas fa-chart-line"></i>
                         </div>
+                        </div>
+                        </router-link>
                     </div>
-                    </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
+                        <router-link to="/admin/products">
                         <div class="card border-success mb-3" style="max-width: 22rem;">
-                            <div class="card-header bg-success text-white">Available Center</div>
-                            <div class="card-body text-success" style="font-size: 80px">
-                                <i class="fas fa-building"></i>
+                            <div class="card-header bg-success text-white">Product Items</div>
+                            <div class="card-body text-success" style="font-size: 40px">
+                                <i class="fab fa-amazon"></i>
                             </div>
                         </div>
+                        </router-link>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card border-success mb-3" style="max-width: 22rem;">
-                            <div class="card-header bg-success text-white">Header</div>
-                            <div class="card-body text-success" style="font-size: 80px">
-                                <i class="fas fa-boxes"></i>
+                    <div class="col-md-3">
+                        <router-link to="/admin/orders">
+                            <div class="card border-success mb-3" style="max-width: 22rem;">
+                                <div class="card-header bg-success text-white">Place Orders</div>
+                                <div class="card-body text-success" style="font-size: 40px">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </div>
                             </div>
-                        </div>
+                        </router-link>
                     </div>
                 </div>
-
             </div>
+
             <!-- sidebar-content  -->
             <main class="page-content">
                 <router-view></router-view>
@@ -123,12 +129,10 @@
             <!-- page-content" -->
         </div>
         <!-- page-wrapper -->
-
     </div>
 </template>
 
 <script>
-
     import {fb} from '../firebase'
     // @ is an alias to /src
     export default {
@@ -157,7 +161,6 @@
         }
     };
 </script>
-
 
 <style>
 </style>

@@ -5,7 +5,6 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -22,13 +21,10 @@
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <router-link to="/checkout"><a class="btn text-white btn-success mr-2"><i class="fas fa-cart-arrow-down"></i> Card</a></router-link>
           <a class="btn text-white btn-success my-2 my-sm-0" data-toggle="modal" data-target="#login">Login</a>
-
         </form>
       </div>
     </nav>
-
   </div>
-
 </template>
 
 <script>
