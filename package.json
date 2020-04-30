@@ -15,7 +15,7 @@
     "chart.js": "^2.9.3",
     "core-js": "^3.3.2",
     "firebase": "^7.4.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.16.0",
     "stripe": "^7.14.0",
     "sweetalert2": "^9.3.16",
